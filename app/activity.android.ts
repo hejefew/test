@@ -15,7 +15,7 @@ class MainActivity extends android.support.v7.app.AppCompatActivity {
 
         let intent: android.content.Intent = new android.content.Intent( ( <any> android.provider.Settings ).ACTION_HOME_SETTINGS );
         let activity = app.android.foregroundActivity || app.android.startActivity;
-        // activity.startActivityForResult( intent, this.MY_PERMISSION_REQUEST );
+        activity.startActivityForResult( intent, this.MY_PERMISSION_REQUEST );
     }
 
     public onSaveInstanceState(outState: android.os.Bundle): void {
